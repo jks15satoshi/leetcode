@@ -1,0 +1,120 @@
+# Project information
+site_name: LeetCode Solutions
+site_description: Notes on LeetCode's problem-solving and basics of algorithms.
+site_author: Satoshi Jek <jks15satoshi@gmail.com>
+
+# Repository information
+repo_name: jks15satoshi/leetcode
+repo_url: https://github.com/jks15satoshi/leetcode/
+
+# Copyright
+copyright: Copyright &copy; 2022 Satoshi Jek. Licensed under the Creative Commons Attribution 4.0 International License.
+
+# Navigation
+nav:
+  - 主页: index.md
+  - LeetCode 题解:
+    - leetcode/index.md
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+
+  palette:
+    - scheme: default
+      primary: orange
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+    - scheme: slate
+      primary: orange
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+  font:
+    text: Inter
+    code: Noto Sans Mono
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/icons/logo.svg
+  favicon: assets/icons/favicon.ico
+
+  feature:
+    - content.code.annotate
+    # - content.tabs.link
+    - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+# Plugins
+plugins:
+  - search
+  - exclude:
+      glob:
+        - README/*
+  - tags:
+      tags_file: leetcode/index.md
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Customization
+extra:
+  manifest: manifest.webmanifest
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/russelltadams
+
+extra_javascript:
+  - javascripts/rsw.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
