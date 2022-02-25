@@ -1,3 +1,3 @@
-# Offline
+# 离线
 
-Sorry, it seems that you're now offline. Please check your internet connection and try again.
+你目前处于离线状态，该页面无法展示。请检查网络状态并重试。

@@ -1,6 +1,6 @@
 {
   "name": "LeetCode Solutions",
-  "short_name": "LeetCode Solns.",
+  "short_name": "LeetCode Solns",
   "description": "Notes on LeetCode's problem-solving and basics of algorithms",
   "start_url": "index.html",
   "scope": "/",
@@ -19,6 +19,6 @@
       "type": "image/png"
     }
   ],
-  "background_color": "#ffc107",
+  "background_color": "#ffa724",
   "theme_color": "#ff6e42"
 }
