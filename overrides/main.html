@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+    {% if config.extra.manifest %}
+      <link
+        rel="manifest"
+        href="{{ config.extra.manifest | url }}"
+        crossorigin="use-credentials"
+      />
+    {% endif %}
+{% endblock %}
