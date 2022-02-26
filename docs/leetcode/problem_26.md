@@ -52,7 +52,7 @@ for (int i = 0; i < k; i++) {
 
 === "限制条件"
 
-    - `1 <= nums.length <= 3 * 10^4`；
+    - <code>1 <= nums.length <= 3 * 10<sup>4</sup></code>；
     - `-100 <= nums[i] <= 100`；
     - `nums` 以 **非降序** 排序。
 

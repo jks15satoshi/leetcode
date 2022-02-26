@@ -15,6 +15,7 @@ nav:
   - 首页: index.md
   - LeetCode 题解:
     - leetcode/index.md
+    - leetcode/problem_2.md
     - leetcode/problem_14.md
     - leetcode/problem_26.md
 
