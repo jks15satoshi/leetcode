@@ -114,7 +114,7 @@ extra:
   manifest: manifest.webmanifest
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/russelltadams
+      link: https://github.com/jks15satoshi
 
 extra_javascript:
   - javascripts/rsw.js
