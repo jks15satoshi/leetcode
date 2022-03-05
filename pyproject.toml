@@ -7,11 +7,11 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.8, <3.11"
-
-[tool.poetry.dev-dependencies]
 mkdocs = "^1.2.3"
 mkdocs-material = "^8.2.4"
 mkdocs-exclude = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
 black = {version = "^22.1.0", allow-prereleases = true}
 manim = "^0.15.0"
 

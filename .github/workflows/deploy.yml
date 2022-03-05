@@ -23,7 +23,7 @@ jobs:
           installer-parallel: true
 
       - name: Install dependencies
-        run: poetry install
+        run: poetry install --no-dev
 
       - name: Deploy MkDocs
         run: poetry run mkdocs gh-deploy --force
