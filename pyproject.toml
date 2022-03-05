@@ -3,15 +3,21 @@ name = "leetcode"
 version = "1.0.0"
 description = "Notes on LeetCode problem solving and basics of algorithm."
 authors = ["Satoshi Jek <jks15satoshi@gmail.com>"]
-license = "CC-BY-4.0"
+license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.8, <3.11"
 
 [tool.poetry.dev-dependencies]
 mkdocs = "^1.2.3"
 mkdocs-material = "^8.2.4"
 mkdocs-exclude = "^1.0.2"
+black = {version = "^22.1.0", allow-prereleases = true}
+manim = "^0.15.0"
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

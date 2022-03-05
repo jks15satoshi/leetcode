@@ -12,7 +12,7 @@ tags:
 
 === "样例 1"
 
-    ![add_two_number](../assets/images/leetcode/problem_2.svg)
+    ![add_two_number](../assets/images/problem_2/example_diagram.png)
 
     <pre>
     <code><b>输入：</b>l1 = [2,4,3], l2 = [5,6,4]
@@ -57,25 +57,31 @@ tags:
     #     def __init__(self, val=0, next=None):
     #         self.val = val
     #         self.next = next
-    def add_two_numbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def add_two_numbers(l1: Optional[ListNode],
+                        l2: Optional[ListNode]) -> Optional[ListNode]:
+        # 创建空指针
         head = tail = None
         carry = 0
 
         # 遍历链表
         while l1 or l2:
+            # 获取加数链表当前节点值，求和及进位值
             val_1 = l1.val if l1 else 0
             val_2 = l2.val if l2 else 0
-            sum = val_1 + val_2 + carry
+            carry, res = divmod(val_1 + val_2 + carry, 10)
 
+            # 如果头指针为空，创建结果链表，并存储计算结果
             if not head:
-                head = tail = ListNode(sum % 10)
+                head = tail = ListNode(res)
+            # 否则，链表后添加新节点，存储计算结果，并移动尾指针到新节点
             else:
-                tail.next = ListNode(sum % 10)
+                tail.next = ListNode(res)
                 tail = tail.next
-            carry = sum // 10
 
+            # 移动加数指针
             l1 = l1.next if l1 else None
             l2 = l2.next if l2 else None
+        # 将进位追加到结果链表
         if carry:
             tail.next = ListNode(carry)
         
