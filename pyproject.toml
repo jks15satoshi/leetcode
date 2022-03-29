@@ -12,7 +12,7 @@ mkdocs-material = "^8.2.7"
 mkdocs-exclude = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
-black = {version = "^22.1.0", allow-prereleases = true}
+black = {version = "^22.3.0", allow-prereleases = true}
 manim = "^0.15.1"
 
 [tool.black]
