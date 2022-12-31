@@ -192,7 +192,7 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "manim"
-version = "0.17.1"
+version = "0.17.2"
 description = "Animation engine for explanatory math videos."
 category = "dev"
 optional = false
@@ -741,7 +741,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8, <3.11"
-content-hash = "ac12e165ca81e4d6234a1f897fb3333bcb3f20cf019534e364fe669f7b82884e"
+content-hash = "c97006a463a43a87de095a27394aa54d34fc82f222f1b11e31b6a22ab7f6d4a4"
 
 [metadata.files]
 black = [
@@ -876,8 +876,8 @@ jinja2 = [
     {file = "Jinja2-3.0.3.tar.gz", hash = "sha256:611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7"},
 ]
 manim = [
-    {file = "manim-0.17.1-py3-none-any.whl", hash = "sha256:61f010becbdbbaf3337299b37d45e12b282b8beb744da443d5152ae3e6e8783b"},
-    {file = "manim-0.17.1.tar.gz", hash = "sha256:ee939c11fda86d34c9ec4bfd3faf71ea7ebe1758e94833d802de4909b748a5c1"},
+    {file = "manim-0.17.2-py3-none-any.whl", hash = "sha256:3a9857ac5c33f3ae7c12674a92d47eab8a206c0e5ae8f23ea681c4765165d4e2"},
+    {file = "manim-0.17.2.tar.gz", hash = "sha256:cb9b6f8b27c07994b929f2ab1943a3f5a6767816391744bb0f64f998dd99ecfe"},
 ]
 manimpango = [
     {file = "ManimPango-0.4.0.post2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:cebd954283da3ed36803bcca47ef49ed6f7587deddecd0a76e4ba6a947c22f25"},

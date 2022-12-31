@@ -13,7 +13,7 @@ mkdocs-exclude = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^22.12.0", allow-prereleases = true}
-manim = "^0.17.1"
+manim = "^0.17.2"
 
 [tool.black]
 line-length = 79
